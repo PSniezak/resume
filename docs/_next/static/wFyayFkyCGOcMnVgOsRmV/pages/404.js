@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"97Is":function(n,u,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/404",function(){return t("uNx/")}])},"uNx/":function(n,u,t){"use strict";t.r(u);var e=t("q1tI"),o=t("nOHt"),s=t.n(o);u.default=function(){return Object(e.useEffect)((function(){return s.a.push("/resume/en")})),null}}},[["97Is",0,1,2]]]);
