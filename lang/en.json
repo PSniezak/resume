@@ -43,7 +43,7 @@
     },
     {
       "title": "Design",
-      "items": "Photoshop, Illustrator, Sketch, Figma"
+      "items": "Photoshop, Illustrator, Sketch"
     },
     {
       "title": "Learning/Knowledges",
@@ -61,7 +61,7 @@
       "title": "Lead developer",
       "duration": "Jul 2017 - Mar 2019",
       "company": "Club Connect",
-      "description": "Club Connect aims to push forward technology in gyms. It's a big ecosystem where I was to reshape it, and then expand it. A lot of concurrent and linked projects were in place, from online administration tools to mobile aps (ReactJS, ReactNative, GatsbyJS, Wordpress)."
+      "description": "Club Connect aims to push forward technology in gyms. It's a big ecosystem where I was to reshape it, and then expand it. A lot of concurrent and linked projects were in place, from online administration tools to mobile apps (ReactJS, ReactNative, GatsbyJS, Wordpress)."
     },
     {
       "title": "Front-end developer",
