@@ -5,13 +5,68 @@
   color: $secondary-color;
   font-size: 1rem;
   min-height: 3rem;
-  line-height: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  max-width: 95%;
+  margin: 1.4rem auto;
+  // padding-top: 1.4rem;
+
+  // border-top: 1px solid $secondary-background-color;
+
+  .contact {
+    // max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    div {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:first-child > span { margin-right: auto; }
+
+      &:last-child  > span { margin-left: auto;  }
+
+      i {
+        color: black;
+      }
+  
+      span, a {
+        font-weight: bold;
+        font-size: 0.8rem; 
+        color: $main-color;
+        margin: 0 auto;
+  
+        &:nth-child(2n) {
+          span {
+            border-bottom: none;
+          }
+        }
+  
+        > span {
+          border-bottom: 2px solid rgba(52, 152, 219, 0.6);
+          border-radius: 2px;
+          color: #111;
+          margin-right: 4px;
+          padding: 0 2px;
+        }
+      }
+    } 
+  }
+
+  .print {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 2em;
+  }
 }
 
 @media print {
   .footer {
-    display: none;
+    margin-bottom: 0;
+
+    .print {
+      display: none;
+    }
   }
 }

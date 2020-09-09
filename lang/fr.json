@@ -12,68 +12,112 @@
   "contact": [
     {
       "icon": "fa-envelope",
-      "text": "paulsniezak@gmail.com"
+      "text": "paulsniezak@gmail.com",
+      "content": "<a href='mailto:paulsniezak@gmail.com'><i class='fa fa-envelope' aria-hidden='true'></i> <span>paulsniezak@gmail.com</span></a>"
     },
     {
       "icon": "fa-phone-square",
-      "text": "+(33)782407482"
+      "text": "+(33)782407482",
+      "content": "<i class='fa fa-phone-square' aria-hidden='true'></i> <span>+(33)782407482</span>"
     },
     {
       "icon": "fa-github",
       "text": "PSniezak",
-      "link": "https://github.com/PSniezak"
-    },
-    {
-      "icon": "fa-compass",
-      "text": "Paris"
+      "content": "<a href='https://github.com/PSniezak' target='_blank'><i class='fa fa-github' aria-hidden='true'></i> <span>@PSniezak</span></a>"
     }
   ],
   "education": [
     {
       "university": "HETIC",
-      "duration": "Sept 2013 - Déc 2018",
-      "location": "Paris - France",
+      "duration": "2013 à 2018",
+      "location": "Paris, France",
       "major": "Expert en Ingénierie et management de la communication numérique"
     }
   ],
   "skills": [
     {
-      "title": "Développement",
-      "items": "ReactJS, ReactNative, GatsbyJS, Next.js<br> Javascript - Typescript - ES6, CSS - SASS, <br> ExpressJS, Wordpress <br> Git, GitHub, GitLab"
+      "title": "Development",
+      "items": [
+        "React",
+        "Gatsby.js",
+        "Next.js",
+        "Javascript (ES6)",
+        "Typescript",
+        "SASS",
+        "Express.js",
+        "Webpack",
+        "Wordpress",
+        "Git"
+      ]
     },
     {
       "title": "Design",
-      "items": "Photoshop, Illustrator, Sketch"
+      "items": [
+        "Photoshop",
+        "Illustrator",
+        "Sketch"
+      ]
     },
     {
-      "title": "Connaissances",
-      "items": "VueJS, Angular, <br> PHP"
+      "title": "Learning/Knowledges",
+      "items": [
+        "GraphQL",
+        "Vue.js",
+        "React Native",
+        "PHP"
+      ]
     }
   ],
   "experience": [
     {
       "title": "Freelance fullstack",
-      "duration": "Janv 2017 - Maintenant",
+      "duration": "Janvier 2017 à maintenant",
       "company": null,
-      "description": "Ces quelques dernières années, j'ai pu travailler avec des agences et des particuliers pour développer leurs sites et back offices. Cela m'a permis d'évoluer toujours plus sur de nouvelles technologies et processus, notamment dans l'écosystème React."
+      "location": null,
+      "tags": [
+        "React",
+        "Gatsby.js",
+        "Next.js"
+      ],
+      "description": [
+        "Collaboration avec des équipes techniques sur le design, le développement et l'implémentation de fonctionnalités.",
+        "Développement d'un large spectre de services web, du site vitrine au back office."
+      ]
     },
     {
       "title": "Lead développeur",
-      "duration": "Juill 2017 - Mars 2019",
+      "duration": "Juillet 2017 à Mars 2019",
       "company": "Club Connect",
-      "description": "Club Connect a pour but de \"numériser\" les salles de sport. La start-up possédait un grand écosystème que j'ai dû refondre, puis agrandir. De nombreux projets parallèles étaient en place et allaient d'outils d'administration en ligne aux applications mobiles (ReactJS, ReactNative, ExpressJS, MongoDB, GatsbyJS, Wordpress)."
+      "location": "Paris, France",
+      "tags": [
+        "MERN",
+        "TDD",
+        "Clean code"
+      ],
+      "description": [
+        "Organisation et mise en place d'une migration intégrale du socle technique.",
+        "Gestion et suivi des systèmes pour assurer la continuité du service.",
+        "Reponsable du développement et de la maintenance de tous les projets de la structure, des outils d'administration en ligne aux applications mobiles."
+      ]
     },
     {
       "title": "Développeur front-end",
-      "duration": "Juill 2016 - Nov 2016",
+      "duration": "Juillet 2016 à Novembre 2016",
       "company": "Wise Digital",
-      "description": "L'agence m'a permis de travailler sur de nombreux projets, principalement en ReactJS et Wordpress."
+      "location": "Paris, France",
+      "description": [
+        "Participation à plusieurs projets, principalement en React et Wordpress.",
+        "Formalisation de nouveaux processus de développement pour toute l'équipe technique."
+      ]
     },
     {
       "title": "Développeur front-end",
-      "duration": "Juill 2015 - Sept 2015",
+      "duration": "Juillet 2015 à Septembre 2015",
       "company": "Alpha Layer",
-      "description": "La plupart de mes projets y étaient des thèmes personnalisés Wordpress, mais aussi certains sites en Symfony."
+      "location": "Paris, France",
+      "description": [
+        "Participation à plusieurs projets, notamment des thèmes personnalisés Wordpress, mais aussi certains sites en Symfony."
+      ]
     }
   ],
   "projects": [

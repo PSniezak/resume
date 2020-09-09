@@ -1,38 +1,18 @@
 @import "styles/variables.scss";
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 0.1rem solid $secondary-color;
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
 
   .identity {
-    h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-
     span {
       font-size: 1.2rem;
-    }
-  }
-
-  .contact {
-    li {
-      margin-top: 0.4rem;
-
-      &:first-child {
-        margin-top: 0;
-      }
     }
   }
 }
 
 @media screen and (max-width: $breakpoint) {
   .header {
-    display: block;
     padding-bottom: 1rem;
 
     .identity {

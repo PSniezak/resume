@@ -2,28 +2,102 @@
 
 html {
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body {
   text-align: center;
   width: 100%;
-  font-family: "Noto Sans", Helvetica, sans-serif;
+  font-family: "Lora", serif;
   -webkit-font-smoothing: antialiased;
   font-size: 1rem;
   margin: 0;
   color: $main-color;
   background-color: $background-color;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-top: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h2 {
+  position: relative;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 40px;
+
+  &::before {
+    content: '';
+    background-color: $secondary-color;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+h3 {
+  font-size: 1rem;
+  margin-top: 0.75em;
+  font-weight: 700;
+}
+
+h4 {
+  margin-top: 0.5em;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
 
-  &:hover {
-    text-decoration: underline;
+ul, ol {
+  padding-left: 16px;
+  margin-top: 0.25em;
+  list-style-type: none;
+}
+
+li {
+  position: relative;
+  font-size: 0.8rem;
+  line-height: 1.7;
+
+  &::before {
+    background-color: $secondary-color;
+    content: '';
+    height: 0.4em;
+    left: -16px;
+    margin-left: 0.28284em;
+    position: absolute;
+    top: 0.56716em;
+    transform: rotate(45deg);
+    width: 0.4em;
+    font-weight: bold;
+    margin-right: 0.5em;
   }
+}
+
+p {
+  font-size: 0.8rem;
+  margin-top: 0.5em;
+  line-height: 1.7;
 }
 
 @media screen and (max-width: $breakpoint) {
@@ -45,7 +119,7 @@ a {
   }
 
   html {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   body {

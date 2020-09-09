@@ -15,10 +15,8 @@ export default function Index({ data }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link
-          href="https://fonts.googleapis.com/css?family=Noto+Sans"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
         <link
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet"
@@ -29,71 +27,72 @@ export default function Index({ data }) {
 
       <main>
         <section className={styles.section}>
+          <h2>{data.sections.experience}</h2>
+
+          {data.experience.map((exp, i) => (
+            <div key={i}>
+              <h3>{exp.title}</h3>
+              <p className={styles.alignRight}>{exp.duration}</p>
+              {exp.company && <h4>{exp.company}</h4>}
+              <p className={styles.alignRight}>{exp.location}</p>
+              {exp.tags && exp.tags.map((tag, i) => (
+                <span key={i} className={styles.tag}>{tag}</span>
+              ))}
+              <ul>
+                {exp.description && exp.description.map((desc, i) => (
+                  <li key={i}>{desc}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </section>
+
+        <section className={styles.section}>
           <h2>{data.sections.education}</h2>
-          <ul>
-            {data.education.map((el, i) => (
-              <li key={i}>
-                <h3>{el.university}</h3>
-                <span>
-                  {el.duration} | {el.location}
-                </span>
-                <p>{el.major}</p>
-              </li>
-            ))}
-          </ul>
+
+          {data.education.map((ed, i) => (
+            <div key={i}>
+              <h3>{ed.university}</h3>
+              <p className={styles.alignRight}>{ed.duration}</p>
+              <p><strong>{ed.major}</strong>, {ed.location}</p>
+            </div>
+          ))}
         </section>
 
         <section className={styles.section}>
           <h2>{data.sections.skills}</h2>
-          <ul>
-            {data.skills.map((el, i) => (
-              <li key={i}>
-                <h3>{el.title}</h3>
-                <p dangerouslySetInnerHTML={{ __html: el.items }}></p>
-              </li>
-            ))}
-          </ul>
-        </section>
 
-        <section className={styles.section}>
-          <h2>{data.sections.experience}</h2>
-          <ul>
-            {data.experience.map((el, i) => (
-              <li key={i}>
-                <h3>{el.title}</h3>
-                <span>
-                  {el.duration} {el.company ? `| ${el.company}` : ""}
-                </span>
-                <p>{el.description}</p>
-              </li>
-            ))}
-          </ul>
+          {data.skills.map((skill, i) => (
+            <div key={i}>
+              <h3>{skill.title}</h3>
+              {skill.items && skill.items.map((skill, i) => (
+                <span className={styles.tag} key={i}>{skill}</span>
+              ))}
+            </div>
+          ))}
         </section>
 
         <section className={styles.section} id={styles.projects}>
           <h2>{data.sections.projects}</h2>
-          <ul>
-            {data.projects.map((el, i) => (
-              <li key={i}>
-                <h3 dangerouslySetInnerHTML={{ __html: el.name }}></h3>
-                <span>{el.contribution}</span>
-                <p>{el.description}</p>
-              </li>
-            ))}
-          </ul>
+
+          {data.projects.map((el, i) => (
+            <div key={i}>
+              <h3 dangerouslySetInnerHTML={{ __html: el.name }}></h3>
+              <p className={styles.alignRight}>{el.contribution}</p>
+              <p>{el.description}</p>
+            </div>
+          ))}
         </section>
       </main>
 
       <section className={styles.section}>
         <h2>{data.sections.languages}</h2>
-        <ul className={styles.sectionFlex}>
-          {data.languages.map((el, i) => (
-            <li key={i}>
-              <h3>{el.name}</h3>
-              <p>{el.proficiency}</p>
-            </li>
-          ))}
-        </ul>
+        {data.languages.map((el, i) => (
+          <div key={i}>
+            <h3>{el.name}</h3>
+            <p className={styles.alignRight}>{el.proficiency}</p>
+          </div>
+        ))}
       </section>
 
       <Footer data={data} />
